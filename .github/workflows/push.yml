@@ -16,7 +16,8 @@ jobs:
           curl -fsSL https://get.deta.dev/space-cli.sh | sh
           echo '/home/runner/.detaspace/bin' >> $GITHUB_PATH
           echo "SPACE_ACCESS_TOKEN=${{ secrets.SPACE_ACCESS_TOKEN }}" >> $GITHUB_ENV
-          ./.detaspace/bin/space new
+          export PATH="/home/runner/.detaspace/bin:$PATH"
+          space new
       - uses: neobrains/space-deployment-github-action@v0.3
 
         with:
