@@ -12,7 +12,7 @@ jobs:
 
       - uses: actions/checkout@v3
       - name: h
-        run: curl -fsSL https://get.deta.dev/space-cli.sh | sh && export PATH="/home/runner/.detaspace/bin:$PATH" && space login 
+        run: curl -fsSL https://get.deta.dev/space-cli.sh | sh && export PATH="/home/runner/.detaspace/bin:$PATH" && space new
       - uses: neobrains/space-deployment-github-action@v0.3
 
         with:
