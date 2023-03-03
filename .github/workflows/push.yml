@@ -16,6 +16,6 @@ jobs:
 
         with:
 
-          access-token: ${{ secrets.SPACE_ACCESS_TOKEN }}
+          access_token: ${{ secrets.SPACE_ACCESS_TOKEN }}
 
-          project-id: ${{ secrets.SPACE_PROJECT_ID }}
+          project_id: ${{ secrets.SPACE_PROJECT_ID }}
