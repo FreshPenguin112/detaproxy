@@ -1,7 +1,8 @@
 # Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
 v: 0
 micros:
-  - name: python-app
+  - name: node-app
     src: .
-    engine: python3.9
+    engine: nodejs16
     primary: true
+    run: node index.js
